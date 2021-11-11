@@ -1,0 +1,63 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "3789acc0f5f0d5a2ea21fad41ea05169",
+    "packages": [
+        {
+            "name": "appiusattaprobus/server-timing",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/appiusattaprobus/server-timing.git",
+                "reference": "325986cee303979d6e4bc5ff10c6307a5addd41c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/appiusattaprobus/server-timing/zipball/325986cee303979d6e4bc5ff10c6307a5addd41c",
+                "reference": "325986cee303979d6e4bc5ff10c6307a5addd41c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Appiusattaprobus\\ServerTiming\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Ivanov",
+                    "email": "dr.ivanov@nxt.ru"
+                }
+            ],
+            "description": "Add Server-Timing header information from your apps",
+            "keywords": [
+                "server",
+                "timing"
+            ],
+            "support": {
+                "issues": "https://github.com/appiusattaprobus/server-timing/issues",
+                "source": "https://github.com/appiusattaprobus/server-timing/tree/1.0.2"
+            },
+            "time": "2020-05-05T11:18:59+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}

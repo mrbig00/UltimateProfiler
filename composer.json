@@ -1,0 +1,20 @@
+{
+    "name": "mrbig00/ultimateprofiler",
+    "description": "Profiling Prestashop with ServerTimingAPI",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MrBig00\\Ultimateprofiler\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Zoltan Szanto",
+            "email": "mrbig00@gmail.com"
+        }
+    ],
+    "require": {
+        "appiusattaprobus/server-timing": "^1.0"
+    }
+}
