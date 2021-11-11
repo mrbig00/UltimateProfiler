@@ -25,10 +25,6 @@ class UltimateProfiler extends Module
         $this->description = $this->l('Profiling Prestashop with ServerTimingAPI');
 
         $this->ps_versions_compliancy = ['min' => '1.7', 'max' => _PS_VERSION_];
-
-//        StopWatch::start('Task 1');
-//        StopWatch::stop('Task 1');
-//        StopWatch::setTimingHeader();
     }
 
     public function install()
@@ -39,18 +35,6 @@ class UltimateProfiler extends Module
         }
 
         return true;
-    }
-
-    public static function startTimer($name)
-    {
-        require_once _PS_MODULE_DIR_ . "ultimateprofiler/vendor/autoload.php";
-        StopWatch::start($name);
-    }
-
-    public static function stopTimer($name)
-    {
-        require_once _PS_MODULE_DIR_ . "ultimateprofiler/vendor/autoload.php";
-        StopWatch::stop($name);
     }
 
     public function hookActionOutputHTMLBefore()
