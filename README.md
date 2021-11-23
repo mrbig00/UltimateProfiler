@@ -7,3 +7,9 @@ Profiling Prestashop with ServerTimingAPI
 
 * Add support for DB queries
 * Add suport for memory usage
+## Usage
+
+* `git clone`
+* `composer install`
+* Install the module
+* Profit
