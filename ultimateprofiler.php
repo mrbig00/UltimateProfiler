@@ -7,13 +7,14 @@ class UltimateProfiler extends Module
     protected $hooks = [
         'moduleRoutes',
         'actionOutputHTMLBefore',
+        'actionAjaxDieBefore',
     ];
 
     public function __construct()
     {
         $this->name = 'ultimateprofiler';
         $this->tab = 'others';
-        $this->version = '1.0.0';
+        $this->version = '1.0.1';
         $this->author = 'Zoltan Szanto';
         $this->need_instance = 1;
 
@@ -38,6 +39,11 @@ class UltimateProfiler extends Module
     }
 
     public function hookActionOutputHTMLBefore()
+    {
+        \Appiusattaprobus\ServerTiming\StopWatch::setTimingHeader();
+    }
+
+    public function hookActionAjaxDieBefore()
     {
         \Appiusattaprobus\ServerTiming\StopWatch::setTimingHeader();
     }
